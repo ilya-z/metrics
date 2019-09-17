@@ -1,5 +1,5 @@
 Experimenting with redux hooks, custom hooks. 
-Digging into performance problems.
+Exploring the performance problems.
 
 #### Live example:
 [https://react-metrics.firebaseapp.com/](https://react-metrics.firebaseapp.com/)
