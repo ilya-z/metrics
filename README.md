@@ -4,6 +4,8 @@ Exploring the performance problems.
 #### Live example:
 [https://react-metrics.firebaseapp.com/](https://react-metrics.firebaseapp.com/)
 
+![](/public/screen.png)
+
 In the project directory, you can run:
 
 ### `npm start`
