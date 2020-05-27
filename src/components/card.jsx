@@ -14,18 +14,16 @@ export default React.memo(function Card(props) {
   useMetricSubscribe(metric.id);
 
   return (
-    <div>
-      <p>
-        {metric.name}
-        <span className="delete" onClick={() => removeMetricHandler(metric.id)}>
-          ❌
-        </span>
-      </p>
+    <div className={'card'}>
+      <div className={'delete'} onClick={() => removeMetricHandler(metric.id)}>
+        <span role="img" aria-label="close">❌</span>
+      </div>
+      <div className="title">{metric.name}</div>
       {!metric.value ? (
         <img src={oval} width="15" alt="" />
       ) : (
         <span className={isUp ? "up" : "down"}>
-          〽️ {metric.value} {isUp ? "+️" : "-️"}
+          <span role="img" aria-label="chart">〽️</span> {metric.value} {isUp ? "+️" : "-️"}
         </span>
       )}
     </div>

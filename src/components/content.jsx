@@ -8,7 +8,9 @@ export default function Content() {
 
   return (
       <main>
-        {metrics.map(m => (<Card metric={m} key={m.id} />))}
+          <div className={'content'}>
+              {metrics.map(m => (<Card metric={m} key={m.id} />))}
+          </div>
       </main>
     )
 }

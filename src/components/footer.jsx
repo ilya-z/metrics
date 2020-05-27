@@ -5,5 +5,5 @@ export default function Footer() {
 
     const metrics = useMetricFilter();
 
-    return useMemo(() => <footer>{metrics.length} metrics</footer>, [metrics.length])
+    return useMemo(() => <footer>Total: {metrics.length} metrics</footer>, [metrics.length])
 }

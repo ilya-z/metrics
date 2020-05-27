@@ -10,7 +10,7 @@ export default class MetricService {
   }
 
   generateMetricsHandler(num = 50) {
-    const names = ["All trips", "Cancelled", "EAT", "Eyeballs"];
+    const names = ["All trips", "Cancel", "EAT", "Eyeballs"];
     const genName = () => names[this.genNum(0, names.length - 1)];
     return Array.from({ length: num }).map(() => ({
       id: this.genNum(0, 99999999999),
